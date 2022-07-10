@@ -5,29 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="/css/bootstrap.min.css"
+      href="css/bootstrap.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Vue JS Bulb switch</title>
   </head>
   <body>
     <div id="app">
       <div class="container">
         <div v-if="bulbIsOn" class="">
-          <img  src="/images/bulb-off.PNG" alt=" picture of bulb off" />
+          <img src="images/bulb-off.PNG" alt=" picture of bulb off" />
         </div>
         <div v-else-if="!bulbIsOn" class="">
-          <img src="/images/bulb-on.PNG" alt=" picture of bulb on" />
+          <img src="images/bulb-on.PNG" alt=" picture of bulb on" />
         </div>
-        <br>
-        <button @click="switchBulb" class="btn btn-lg btn-secondary">Switch {{bulbIsOn ? 'on': 'off'}}</button>
+        <br />
+        <button @click="switchBulb" class="btn btn-lg btn-secondary">
+          Switch {{bulbIsOn ? 'on': 'off'}}
+        </button>
       </div>
     </div>
-   Designed by <a href="https://gabrielekodo-portfolio-site.netlify.app/"> Gabriel Ekodo</a>
-    <script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="/js/vue.js"></script>
-    <script src="/js/scripts.js"></script>
+    Designed by
+    <a href="https://gabrielekodo-portfolio-site.netlify.app/">
+      Gabriel Ekodo</a
+    >
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
